@@ -1,0 +1,42 @@
+*{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(241, 209, 209)
+}
+
+.outer-box{
+    position: relative;
+    height: 100vh;
+    width: 80vw;
+}
+
+.grid-container{
+    display: grid;
+    position: absolute;
+    top: 0; right: 0; bottom: 100px; left: 0;
+    padding: .5em;
+    border: .5em solid orange; 
+    grid-template-columns: 1fr 10fr;
+    grid-gap: .5em;
+    background-color: #bcdaf3;
+    min-height: 200px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sidebar {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    overflow-y: scroll
+}
+
+.item2 {
+
+}
+

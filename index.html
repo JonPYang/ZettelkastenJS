@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <title>TheOdinProject Library</title>
+
+</head>
+
+<body>
+  <script src="scripts.js"></script>
+
+  <div class="container"><h2 class="text-primary mb-2">Library:</h5></div class="container">
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col-3 mt-2 mb-3">
+        <form>
+          <div class="form-group">
+            <label>Book Title</label>
+            <input type="text" class="form-control" placeholder="Book Title" name="booktitle">
+          </div>
+          <div class="form-group">
+            <label>Author Name</label>
+            <input type="text" class="form-control" placeholder="Author Name" name="author">
+          </div>
+          <div class="form-group">
+            <label>Number of Pages</label>
+            <input type="number" class="form-control" placeholder="Number of Pages" name="numpages">
+          </div>
+          <div class="form-group">
+            <label>Progress?</label>
+            <select class="form-control" name=read>
+              <option value="Unread">Unread</option>
+              <option value="Started">Started</option>
+              <option Value="Finished">Finished</option>
+            </select>
+          </div>
+          <input type="reset" class="btn btn-secondary btn-success" value="Submit" onclick="addBook()">
+        </form>
+      </div>
+      <div class="col-9" name="librarycontainer">
+        <div class="card mt-4">
+          <div class="card-header pb-0">
+            <h5>The Lord of The Rings</h5>
+            <h6>J.R.R Tolkien</h6>
+          </div>
+          <div class="card-body py-0">
+            <div class="row">
+              <div class="col-3" style="min-width: 70px"><small class="text-muted">1000 Pages</small></div>
+              <div class="col px-0"><small class="text-danger">Unread</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
